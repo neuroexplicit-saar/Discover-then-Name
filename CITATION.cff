@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite as below."
+preferred-citation:
+  authors:
+    - family-names: Rao
+      given-names: Sukrut
+      orcid: "https://orcid.org/0000-0001-8896-7619"
+    - family-names: Mahajan
+      given-names: Sweta
+      orcid: "https://orcid.org/0009-0004-8811-8771"
+    - family-names: Böhle
+      given-names: Moritz
+      orcid: "https://orcid.org/0000-0002-5479-3769"
+    - family-names: Schiele
+      given-names: Bernt
+      orcid: "https://orcid.org/0000-0001-9683-5237"
+  title: "Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery"
+  type: conference-paper
+  collection-title: "European Conference on Computer Vision"
+  year: 2024

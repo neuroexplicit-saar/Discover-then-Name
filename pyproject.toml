@@ -1,0 +1,10 @@
+[project]
+name = "dncbm"
+version = "0.1.0"
+description = "Code for the paper: Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery. ECCV 2024."
+readme = "README.md"
+
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
