@@ -8,6 +8,8 @@ data_dir_root = './data'
 save_dir_root = './SAE'
 probe_cs_save_dir_root = './probe'
 vocab_dir = './vocab'
+analysis_dir = './analysis'
+
 
 
 probe_dataset_root_dir_dict = {

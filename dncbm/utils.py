@@ -112,6 +112,9 @@ def common_init(args, disable_make_dirs=False):
     args.autoencoder_input_dim_dict = config.autoencoder_input_dim_dict
     args.data_dir_root = config.data_dir_root
     args.save_dir_root = config.save_dir_root
+    args.probe_cs_save_dir_root = config.probe_cs_save_dir_root
+    args.vocab_dir  = config.vocab_dir
+    args.analysis_dir = config.analysis_dir
 
     args.data_dir_activations = {}
     args.data_dir_activations["img"] = osp.join(
