@@ -121,6 +121,52 @@ python scripts/save_concept_strengths.py --lr 5e-4 --l1_coeff 3e-5 --expansion_f
 python scripts/train_linear_probe.py --lr 5e-4 --l1_coeff 3e-5 --expansion_factor 8 --img_enc_name clip_RN50 --resample_freq 10 --train_sae_bs 4096 --num_epochs 200 --ckpt_freq 0 --val_freq 1 --probe_lr 1e-2  --probe_sparsity_loss_lambda 0.1 --probe_classification_loss 'CE' --probe_epochs 200 --probe_sparsity_loss L1 --probe_eval_coverage_freq 50 --probe_dataset places365
 ```
 
+### Visualization plots 
+Example on the SAE trained above 
+
+#### Task Agnosticity
+First, save the required files for plotting:
+```bash
+python scripts/visualization/vis_task_agnosticity_dump.py --img_enc_name clip_RN50 --probe_split val --method_name ours  --device cuda --sae_dataset cc3m
+```
+
+Then, plot the task agnosticity plots: 
+```bash
+python scripts/visualization/vis_task_agnosticity_plot.py --img_enc_name clip_RN50 --probe_split val --method_name ours --device cpu --sae_dataset cc3m 
+```
+
+#### Meta Clusters
+First, save the required files for plotting:
+```bash 
+python scripts/visualization/vis_meta_clustering_dump.py --img_enc_name clip_RN50 --method_name ours --probe_split val --probe_dataset places365 --sae_dataset cc3m --device cuda
+```
+
+Then, plot the meta clusters: 
+```bash
+python scripts/visualizations/vis_meta_clustering_plot.py --img_enc_name clip_RN50 --probe_split val --method_name ours  --probe_dataset places365 --sae_dataset cc3m --device cpu
+```
+
+#### Local Explanation
+First, save the required files for plotting:
+```bash
+python scripts/visualization/vis_local_explanations_dump.py --sae_dataset cc3m --img_enc_name clip_RN50 --method_name ours  --probe_split val --probe_dataset places365 --which_ckpt final
+```
+
+Then, plot the local explanations: 
+```bash
+python scripts/visualization/vis_local_explanations_plot.py --sae_dataset cc3m --img_enc_name clip_RN50 --method_name ours --probe_split val --probe_dataset places365  --which_ckpt final --device cpu
+```
+
+#### Global Explanation
+First, save the required files for plotting:
+```bash
+python scripts/visualization/vis_global_explanations_dump.py --sae_dataset cc3m --img_enc_name clip_RN50 --method_name ours --probe_split val   --probe_dataset places365 --which_ckpt final
+```
+
+Then, plot the global explnataions: 
+```bash
+python scripts/visualization/vis_global_explanations_plot.py --img_enc_name clip_RN50 --method_name ours --probe_split val   --probe_dataset places365 --which_ckpt final --device cpu
+```
 
 ## Acknowledgements
 
