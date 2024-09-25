@@ -16,7 +16,11 @@ European Conference on Computer Vision (ECCV) 2024
 |
 <a href="https://github.com/neuroexplicit-saar/discover-then-name">Code</a>
 |
-<a href="https://sukrutrao.github.io/publication/discover-then-name-task-agnostic-concept-bottlenecks-via-automated-concept-discovery/DiscoverThenName_Poster.pdf">Poster</a>
+<a href="https://sukrutrao.github.io/publication/discover-then-name-task-agnostic-concept-bottlenecks-via-automated-concept-discovery/poster.pdf">Poster</a>
+|
+<a href="https://youtu.be/HEZL3TJCZ44">Video</a>
+|
+<a href="https://sukrutrao.github.io/publication/discover-then-name-task-agnostic-concept-bottlenecks-via-automated-concept-discovery/slides.pdf">Slides</a>
 </h3>
 </p>
 
