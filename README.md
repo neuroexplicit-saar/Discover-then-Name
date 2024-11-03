@@ -105,9 +105,8 @@ python scripts/train_sae_img.py --lr 5e-4 --l1_coeff 3e-5 --expansion_factor 8 -
 python scripts/assign_names.py --lr 5e-4 --l1_coeff 3e-5 --expansion_factor 8 --img_enc_name clip_RN50 --num_epochs 200 --resample_freq 10 --train_sae_bs 4096
 ```
 ### Checkpoints and Assigned names can be found at the following link: 
-```bash
-https://nextcloud.mpi-klsb.mpg.de/index.php/s/PZYoKSq29XaEgL6
-```
+* [Checkpoints and Assigned Names](https://nextcloud.mpi-klsb.mpg.de/index.php/s/PZYoKSq29XaEgL6)
+
  
 ### Training a Linear Probe for the Concept Bottleneck Model
 
